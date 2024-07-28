@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <style>
+    body {
+            background-color: darkblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20;
+        }
+    .container {
+            justify-content: center;
+            background-color: lightblue;
+            border: 3px solid black;
+            padding: 20px;
+            border-radius: 20px;
+            width: 300px;
+    }
+  </style>
+  <script>
+    function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var mobile = document.getElementById("mobile").value;
+    var gender = document.getElementById("gender").value;
+    var color = document.getElementById("color").value;
+    
+    if (name === "") {
+      alert("Please enter your name");
+      return;
+    }
+    if(email === ""  || !email.includes(".") || !email.includes("@")){
+      alert("Enter email correctly");
+      return;
+    }
+    if (mobile === "" || mobile.length!==10) {
+      alert("Please enter your mobile number correctly");
+      return;
+    }
+    if (gender === "") {
+      alert("Please select your gender");
+      return;
+    }
+    if (color === "") {
+      alert("Please enter your favorite color");
+      return;
+    }
+
+    var information =
+      "Name: " + name + "\n" +
+      "Email: " + email + "\n" +
+      "Mobile No: " + mobile + "\n" +
+      "Gender: " + gender + "\n" +
+      "Favorite Color: " + color;
+
+     alert(`${information}`);
+  }
+  </script>
+</head>
+<body>
+  <div class="container" align="center">
+    <h2><u>Form Validation</h2></u>
+    <div>
+    <form>
+      <input type="text" id="name" placeholder="Name"><br><br>
+      <input type="email" id="email" placeholder="Email"><br><br>
+      <input type="tel" id="mobile" placeholder="Mobile No"><br><br>
+      <select id="gender"><br><br>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br><br>
+      <input type="text" id="color" placeholder="Favorite Color"><br><br>
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
