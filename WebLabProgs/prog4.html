@@ -1,136 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-     <style>
-        body {
-          font-family: sans-serif;
-          display: flex;
-          justify-content: space-evenly;
-          background-color: pink;
-          border: 3px solid black;
-        }
-       h3{
-        color: darkblue;
-       }
-       h4{
-        color: rgb(253, 11, 253);
-       }
-        .skill-list li, .lang-list li {
-          display: block;
-          border: solid 1px black;
-          background-color: whitesmoke;
-          margin: 5px;
-          padding: 10px;
-          text-align: center;
-          border-radius: 8px;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      background-color:whitesmoke;
+    }
+    .container {
+      display: flex;
+      border: 3px solid black;
+      background-color: pink;
+      padding: 20px;
+      gap: 20px;
+      border-radius: 15px;
 
-    </style>
-    <title>Resume</title>
-  </head>
-  <body>
-      <section id="sec-1">
-        <h1>Srushti M</h1>
-        <p><i>
-          Computer Science and Engineering Student, JSSSTU, Mysore
-        </p></i>
-        <p><i>
-          I consider myself as a confident, strong, responsible, and an orderly person.
-        </p></i>
-        <p><i>Mysore, Karnataka | +91 8105047917 | m.srushti281@gmail.com</p></i>
-        <br />
+    }
+    h3 {
+      color: darkblue;
+    }
+    h4 {
+      color: darkblue;
+    }
+    .skill-list li, .lang-list li {
+      display: block;
+      border: solid 1px black;
+      background-color: whitesmoke;
+      margin: 5px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+    }
+  </style>
+  <title>Resume</title>
+</head>
+<body>
+  <div class="container">
+    <section id="sec-1">
+      <h1>Srushti M</h1>
+      <p><i>Computer Science and Engineering Student, JSSSTU, Mysore</i></p>
+      <p><i>I consider myself as a confident, strong, responsible, and an orderly person.</i></p>
+      <p><i>Mysore, Karnataka | +91 8105047917 | m.srushti281@gmail.com</i></p>
+      <br />
+      <div>
+        <h3>Education</h3>
         <div>
-          <h3>Education</h3>
-          <div>
-            <h4>Christ Public School, Mysore</h4>
-            <i><p><i>Grade 1 to 10</p></i></i>
-            <p><i>CBSE - 95.4%</p></i>
-            <p><i>2009 - 2019</p></i>
-          </div>
-          <div>
-            <h4>Sadvidya Semi-Residential PU College, Mysore</h4>
-            <i><p><i>PUC</p></i></i>
-            <p><i>Karnataka State Board - 97.5%</p></i>
-            <p><i>2019 - 2021</p></i>
-          </div>
-          <div>
-            <h4>JSS Science and Technology University, Mysore</h4>
-            <i><p><i>B.E in CS</p></i></i>
-            <p><i>2021 - Present</p></i>
-          </div>
+          <h4>Christ Public School, Mysore</h4>
+          <p><i>Grade 1 to 10</i></p>
+          <p><i>CBSE - 95.4%</i></p>
+          <p><i>2009 - 2019</i></p>
         </div>
         <div>
-          <h3>Projects</h3>
-          <div>
-            <h4>Soil Fertility Checker and Crop Predictor using IoT</h4>
-            <p><i>
-              IoT based soil fertility checker that enables farmers and gardeners to <br>accurately assess the fertility of their soil in real time.
-            </p></i>
-          </div>
-          <div>
-            <h4>Event Registration Management System</h4>
-            <p><i>
-              A web application in which the distance between the customers and <br>management is reduced with smart web access for event registration.
-            </p></i>
-          </div>
-          <div>
-            <h4>Animal Intrusion Detection using AI</h4>
-            <p><i>
-              Developed using artificial intelligence to help detect animal intrusion.
-            </p></i>
-          </div>
-          <div>
-            <h4>Multiple Disease Prediction using Machine Learning</h4>
-            <p><i>
-              Predicts Parkinson's disease, heart disease, and diabetes using<br> machine learning.
-            </p></i>
-          </div>
-          <div>
-            <h4>House Price Prediction using Machine Learning</h4>
-            <p><i>
-              Predicts house prices using machine learning algorithms.
-            </p></i>
-          </div>
-          <div>
-            <h4>Online College Stationery Website</h4>
-            <p><i>
-              A website for managing college stationery supplies.
-            </p></i>
-          </div>
-        </div>
-      </section>
-      <section id="sec-2"><br><br><br>
-        <div>
-          <h3>Skills</h3>
-          <ul class="skill-list">
-            <li>C</li>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL</li>
-            <li>Python</li>
-          </ul>
+          <h4>Sadvidya Semi-Residential PU College, Mysore</h4>
+          <p><i>PUC</i></p>
+          <p><i>Karnataka State Board - 97.5%</i></p>
+          <p><i>2019 - 2021</i></p>
         </div>
         <div>
-          <h3>Professional Skills</h3>
-          <ul class="skill-list">
-            <li>Communication</li>
-            <li>Leadership</li>
-            <li>Management</li>
-            <li>Quick Learner</li>
-            <li>Teamwork</li>
-            <li>Adaptability</li>
-          </ul>
+          <h4>JSS Science and Technology University, Mysore</h4>
+          <p><i>B.E in CS</i></p>
+          <p><i>2021 - Present</i></p>
+        </div>
+      </div>
+      <div>
+        <h3>Projects</h3>
+        <div>
+          <h4>Soil Fertility Checker and Crop Predictor using IoT</h4>
+          <p><i>IoT based soil fertility checker that enables farmers and gardeners to <br>accurately assess the fertility of their soil in real time.</i></p>
         </div>
         <div>
-          <h3>Languages</h3>
-          <ul class="lang-list">
-            <li>English</li>
-            <li>Kannada</li>
-            <li>Hindi</li>
-          </ul>
+          <h4>Event Registration Management System</h4>
+          <p><i>A web application in which the distance between the customers and <br>management is reduced with smart web access for event registration.</i></p>
         </div>
-      </section>
-  </body>
+        <div>
+          <h4>Animal Intrusion Detection using AI</h4>
+          <p><i>Developed using artificial intelligence to help detect animal intrusion.</i></p>
+        </div>
+        <div>
+          <h4>Multiple Disease Prediction using Machine Learning</h4>
+          <p><i>Predicts Parkinson's disease, heart disease, and diabetes using<br> machine learning.</i></p>
+        </div>
+      </div>
+    </section>
+    <section id="sec-2">
+      <div>
+        <h3>Skills</h3>
+        <ul class="skill-list">
+          <li>C</li>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SQL</li>
+          <li>Python</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Professional Skills</h3>
+        <ul class="skill-list">
+          <li>Communication</li>
+          <li>Leadership</li>
+          <li>Management</li>
+          <li>Quick Learner</li>
+          <li>Teamwork</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <ul class="lang-list">
+          <li>English</li>
+          <li>Kannada</li>
+          <li>Hindi</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
 </html>
